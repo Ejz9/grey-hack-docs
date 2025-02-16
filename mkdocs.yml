@@ -1,0 +1,47 @@
+site_name: Grey Hack Docs
+site_url: https://yourusername.github.io/grey-hack-docs
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/w
+  favicon: assets/favicon.ico
+  palette:
+      # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  features:
+    - navigation.instant
+  language: en
+nav:
+  - Home: index.md
+  - Guides:
+      - Getting Started: guides/getting-started.md
+      - Hacking Basics: guides/hacking-basics.md
+      - Networking: guides/networking.md
+  - Reference:
+      - Commands: reference/commands.md
+      - Exploits: reference/exploits.md
+  - FAQ: faq.md
+  - Troubleshooting: troubleshooting.md
+extra_css:
+  - stylesheets/custom.css
+extra_javascript:
+  - javascripts/custom.js
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
